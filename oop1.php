@@ -10,7 +10,7 @@ class Animal
   # parameter: data hewan (array)
   public function __construct($data)
   {
-    $this->animals = ['kucing', 'jerapah', 'ikan'];
+    $this->animals = $data;
   }
 
   # method index - menampilkan data animals
@@ -49,7 +49,7 @@ class Animal
 
 # membuat object
 # kirimkan data hewan (array) ke constructor
-$animal = new Animal([]);
+$animal = new Animal(['kucing', 'ikan', 'jerapah']);
 
 echo "Index - Menampilkan seluruh hewan <br>";
 $animal->index();
